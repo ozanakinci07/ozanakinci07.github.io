@@ -11,7 +11,7 @@
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--black);color:var(--ink);font:400 17px/1.6 var(--body)}
 a{color:var(--amber)}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 .wrap{max-width:1040px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
 
 /* top bar */
@@ -104,3 +104,6 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--amber);outline-off
   .top .wrap{flex-direction:column;align-items:flex-start;gap:8px;padding-block:10px}
   nav{gap:18px}
 }
+/* screenshots sit in a slim phone-style frame and never grow past a phone's size */
+.shot img{border:6px solid #1a1f1c;border-radius:26px;max-width:260px;width:100%;margin-inline:auto;background:#0b0d0c}
+.shot figcaption{text-align:center}
